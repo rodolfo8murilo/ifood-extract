@@ -1,5 +1,5 @@
-2026-06-19 12:59:42 [scrapy.utils.log] INFO: Scrapy 2.14.2 started (bot: scrapybot)
-2026-06-19 12:59:42 [scrapy.utils.log] INFO: Versions:
+2026-06-19 13:26:45 [scrapy.utils.log] INFO: Scrapy 2.14.2 started (bot: scrapybot)
+2026-06-19 13:26:45 [scrapy.utils.log] INFO: Versions:
 {'lxml': '6.0.2',
  'libxml2': '2.14.6',
  'cssselect': '1.4.0',
@@ -10,13 +10,13 @@
  'pyOpenSSL': '25.3.0 (OpenSSL 3.5.5 27 Jan 2026)',
  'cryptography': '46.0.5',
  'Platform': 'Linux-6.17.0-35-generic-x86_64-with-glibc2.39'}
-2026-06-19 12:59:42 [scrapy.crawler] DEBUG: Using AsyncCrawlerProcess
-2026-06-19 12:59:42 [asyncio] DEBUG: Using selector: EpollSelector
-2026-06-19 12:59:42 [ifood] INFO: Total URLs loaded: 999
-2026-06-19 12:59:42 [scrapy.addons] INFO: Enabled addons:
+2026-06-19 13:26:45 [scrapy.crawler] DEBUG: Using AsyncCrawlerProcess
+2026-06-19 13:26:45 [asyncio] DEBUG: Using selector: EpollSelector
+2026-06-19 13:26:45 [ifood] INFO: Total URLs loaded: 30
+2026-06-19 13:26:45 [scrapy.addons] INFO: Enabled addons:
 []
-2026-06-19 12:59:42 [scrapy.extensions.telnet] INFO: Telnet Password: 4ae1c85a78fe0bda
-2026-06-19 12:59:42 [scrapy.middleware] INFO: Enabled extensions:
+2026-06-19 13:26:45 [scrapy.extensions.telnet] INFO: Telnet Password: f6f16887855f81b4
+2026-06-19 13:26:45 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.logcount.LogCount',
  'scrapy.extensions.telnet.TelnetConsole',
@@ -24,7 +24,7 @@
  'scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.throttle.AutoThrottle',
  'spidermon.contrib.scrapy.extensions.Spidermon']
-2026-06-19 12:59:42 [scrapy.crawler] INFO: Overridden settings:
+2026-06-19 13:26:45 [scrapy.crawler] INFO: Overridden settings:
 {'AUTOTHROTTLE_ENABLED': True,
  'CONCURRENT_REQUESTS': 1,
  'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
@@ -37,7 +37,7 @@
  'SPIDER_MODULES': ['crawler.spiders'],
  'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
                '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
-2026-06-19 12:59:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2026-06-19 13:26:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
@@ -51,46 +51,320 @@
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats',
  'crawler.middlewares.SeleniumBaseCDPMiddleware']
-2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/core/downloader/middleware.py:44: ScrapyDeprecationWarning: SeleniumBaseCDPMiddleware.process_request() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+2026-06-19 13:26:46 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/core/downloader/middleware.py:44: ScrapyDeprecationWarning: SeleniumBaseCDPMiddleware.process_request() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
   self._check_mw_method_spider_arg(mw.process_request)
 
-2026-06-19 12:59:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+2026-06-19 13:26:46 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
  'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2026-06-19 12:59:43 [scrapy.middleware] INFO: Enabled item pipelines:
+2026-06-19 13:26:46 [scrapy.middleware] INFO: Enabled item pipelines:
 ['crawler.pipelines.SaveJsonPipeline']
-2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SaveJsonPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+2026-06-19 13:26:46 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SaveJsonPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
   self._check_mw_method_spider_arg(pipe.open_spider)
 
-2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SaveJsonPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+2026-06-19 13:26:46 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SaveJsonPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
   self._check_mw_method_spider_arg(pipe.close_spider)
 
-2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SaveJsonPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+2026-06-19 13:26:46 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SaveJsonPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
   self._check_mw_method_spider_arg(pipe.process_item)
 
-2026-06-19 12:59:43 [scrapy.core.engine] INFO: Spider opened
-2026-06-19 12:59:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/spidermon/contrib/scrapy/extensions.py:238: ScrapyDeprecationWarning: Passing a 'spider' argument to StatsCollector.get_stats() is deprecated and the argument will be removed in a future Scrapy version.
+2026-06-19 13:26:46 [scrapy.core.engine] INFO: Spider opened
+2026-06-19 13:26:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-06-19 13:26:46 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/spidermon/contrib/scrapy/extensions.py:238: ScrapyDeprecationWarning: Passing a 'spider' argument to StatsCollector.get_stats() is deprecated and the argument will be removed in a future Scrapy version.
   "stats": self.crawler.stats.get_stats(spider),
 
-2026-06-19 12:59:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6028
-2026-06-19 12:59:43 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
-2026-06-19 12:59:46 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/brasilia-df/pao-de-acucar---aguas-claras-sul-aguas-claras/5938ca36-c5ee-455b-b0ce-8211f1921be5?item=c2296a33-6a72-415b-888b-9c9ed1b5b5fd
-2026-06-19 12:59:53 [ifood] INFO: Executing captcha bypass (solve_captcha)...
-2026-06-19 12:59:58 [ifood] INFO: Captcha command sent.
-2026-06-19 13:00:25 [ifood] INFO: Timeout waiting for 'networkidle', proceeding with current HTML.
-2026-06-19 13:00:25 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/brasilia-df/pao-de-acucar---aguas-claras-sul-aguas-claras/5938ca36-c5ee-455b-b0ce-8211f1921be5?item=c2296a33-6a72-415b-888b-9c9ed1b5b5fd
-2026-06-19 13:00:25 [ifood] INFO: Closing browser instances safely...
-2026-06-19 13:00:25 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
-2026-06-19 13:00:25 [ifood] INFO: Processing rendered page data.
-2026-06-19 13:00:28 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=04264723-a92c-4066-999b-cf7e5b219e92
-2026-06-19 13:00:35 [ifood] INFO: Executing captcha bypass (solve_captcha)...
-2026-06-19 13:00:40 [ifood] INFO: Captcha command sent.
-2026-06-19 13:00:43 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 1 items (at 1 items/min)
-2026-06-19 13:00:47 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=04264723-a92c-4066-999b-cf7e5b219e92
-2026-06-19 13:00:47 [ifood] INFO: Closing browser instances safely...
-2026-06-19 13:00:47 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
-2026-06-19 13:00:47 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:26:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6031
+2026-06-19 13:26:46 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:26:49 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/brasilia-df/pao-de-acucar---aguas-claras-sul-aguas-claras/5938ca36-c5ee-455b-b0ce-8211f1921be5?item=c2296a33-6a72-415b-888b-9c9ed1b5b5fd
+2026-06-19 13:26:56 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:26:59 [ifood] INFO: Captcha command sent.
+2026-06-19 13:27:06 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/brasilia-df/pao-de-acucar---aguas-claras-sul-aguas-claras/5938ca36-c5ee-455b-b0ce-8211f1921be5?item=c2296a33-6a72-415b-888b-9c9ed1b5b5fd
+2026-06-19 13:27:06 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:27:06 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:27:06 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:27:10 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=04264723-a92c-4066-999b-cf7e5b219e92
+2026-06-19 13:27:17 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:27:21 [ifood] INFO: Captcha command sent.
+2026-06-19 13:27:28 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=04264723-a92c-4066-999b-cf7e5b219e92
+2026-06-19 13:27:28 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:27:28 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:27:28 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:27:31 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---pamplona-jardim-paulista/0568e774-7ba8-493c-a842-ac4d72546220?item=7c8e1d77-b8d9-40b8-a4b6-9f1893f1c2aa
+2026-06-19 13:27:38 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:27:43 [ifood] INFO: Captcha command sent.
+2026-06-19 13:27:46 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 2 pages/min), scraped 2 items (at 2 items/min)
+2026-06-19 13:27:50 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---pamplona-jardim-paulista/0568e774-7ba8-493c-a842-ac4d72546220?item=7c8e1d77-b8d9-40b8-a4b6-9f1893f1c2aa
+2026-06-19 13:27:50 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:27:50 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:27:50 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:27:53 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=abd20a58-c975-4aa6-916d-13d3285ef315
+2026-06-19 13:28:00 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:28:05 [ifood] INFO: Captcha command sent.
+2026-06-19 13:28:12 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=abd20a58-c975-4aa6-916d-13d3285ef315
+2026-06-19 13:28:12 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:28:12 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:28:12 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:28:15 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/desativada-fenix---carrefour-hiper---pamplona-jardim-paulista/b06518dd-4c48-4e0e-8f19-277baaa0772f?item=8f02fa34-f635-4f30-b7f8-d5ba48eb28af
+2026-06-19 13:28:22 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:28:27 [ifood] INFO: Captcha command sent.
+2026-06-19 13:28:34 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/?item=8f02fa34-f635-4f30-b7f8-d5ba48eb28af
+2026-06-19 13:28:34 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:28:34 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:28:34 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:28:38 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---pamplona-jardim-paulista/b06518dd-4c48-4e0e-8f19-277baaa0772f?item=dff7c649-3ed8-41c4-b865-304e130a7bb5
+2026-06-19 13:28:45 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:28:46 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 3 pages/min), scraped 5 items (at 3 items/min)
+2026-06-19 13:28:50 [ifood] INFO: Captcha command sent.
+2026-06-19 13:28:57 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/?item=dff7c649-3ed8-41c4-b865-304e130a7bb5
+2026-06-19 13:28:57 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:28:57 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:28:57 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:29:00 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=36a26595-763b-4e70-b095-be819c944020
+2026-06-19 13:29:07 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:29:12 [ifood] INFO: Captcha command sent.
+2026-06-19 13:29:19 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=36a26595-763b-4e70-b095-be819c944020
+2026-06-19 13:29:19 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:29:19 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:29:19 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:29:22 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/brasilia-df/carrefour-hiper---asa-norte-asa-norte/1dcd9511-ab36-416b-b32f-65ca7b793be0?item=e253066e-581b-4ec3-8be0-f96a82805b80
+2026-06-19 13:29:30 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:29:31 [ifood] INFO: Captcha command sent.
+2026-06-19 13:29:40 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/brasilia-df/carrefour-hiper---asa-norte-asa-norte/1dcd9511-ab36-416b-b32f-65ca7b793be0?item=e253066e-581b-4ec3-8be0-f96a82805b80
+2026-06-19 13:29:40 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:29:40 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:29:40 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:29:43 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/droga-raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=95ca2ffa-ce17-4703-a42e-c7ca32ed6bc5
+2026-06-19 13:29:46 [scrapy.extensions.logstats] INFO: Crawled 8 pages (at 3 pages/min), scraped 8 items (at 3 items/min)
+2026-06-19 13:29:50 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:29:55 [ifood] INFO: Captcha command sent.
+2026-06-19 13:30:09 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=95ca2ffa-ce17-4703-a42e-c7ca32ed6bc5
+2026-06-19 13:30:09 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:30:09 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:30:09 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:30:13 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/droga-raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=7edc2fb2-09b8-47b4-99a8-9db0bb857d61
+2026-06-19 13:30:20 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:30:21 [ifood] INFO: Captcha command sent.
+2026-06-19 13:30:28 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/?item=7edc2fb2-09b8-47b4-99a8-9db0bb857d61
+2026-06-19 13:30:28 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:30:28 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:30:28 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:30:32 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=c420aa61-26d6-4734-9fbd-f04a3522840d
+2026-06-19 13:30:39 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:30:43 [ifood] INFO: Captcha command sent.
+2026-06-19 13:30:46 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 2 pages/min), scraped 10 items (at 2 items/min)
+2026-06-19 13:30:50 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=c420aa61-26d6-4734-9fbd-f04a3522840d
+2026-06-19 13:30:50 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:30:50 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:30:50 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:30:55 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---pamplona-jardim-paulista/0568e774-7ba8-493c-a842-ac4d72546220?item=6033a0e8-f553-4659-894f-5af7cb37fd0c
+2026-06-19 13:31:02 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:31:07 [ifood] INFO: Captcha command sent.
+2026-06-19 13:31:14 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---pamplona-jardim-paulista/0568e774-7ba8-493c-a842-ac4d72546220?item=6033a0e8-f553-4659-894f-5af7cb37fd0c
+2026-06-19 13:31:14 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:31:14 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:31:14 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:31:17 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/brasilia-df/carrefour-hiper---asa-norte-asa-norte/1dcd9511-ab36-416b-b32f-65ca7b793be0?item=9fb2a854-d8fe-4cdb-9576-e563022d3824
+2026-06-19 13:31:25 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:31:26 [ifood] INFO: Captcha command sent.
+2026-06-19 13:31:33 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/brasilia-df/carrefour-hiper---asa-norte-asa-norte/1dcd9511-ab36-416b-b32f-65ca7b793be0?item=9fb2a854-d8fe-4cdb-9576-e563022d3824
+2026-06-19 13:31:33 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:31:33 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:31:33 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:31:38 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=8ac6a431-7397-4a89-93b9-fdb87cd0cdad
+2026-06-19 13:31:45 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:31:46 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 3 pages/min), scraped 13 items (at 3 items/min)
+2026-06-19 13:31:50 [ifood] INFO: Captcha command sent.
+2026-06-19 13:31:57 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=8ac6a431-7397-4a89-93b9-fdb87cd0cdad
+2026-06-19 13:31:57 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:31:57 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:31:57 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:32:00 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---pamplona-jardim-paulista/0568e774-7ba8-493c-a842-ac4d72546220?item=45261d1f-2eee-461d-b4ed-6fab478dd1dc
+2026-06-19 13:32:08 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:32:11 [ifood] INFO: Captcha command sent.
+2026-06-19 13:32:18 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/?item=45261d1f-2eee-461d-b4ed-6fab478dd1dc
+2026-06-19 13:32:18 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:32:18 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:32:18 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:32:21 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=914c6eb5-7434-4d05-b28b-8b3aeef1936c
+2026-06-19 13:32:28 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:32:29 [ifood] INFO: Captcha command sent.
+2026-06-19 13:32:46 [scrapy.extensions.logstats] INFO: Crawled 15 pages (at 2 pages/min), scraped 15 items (at 2 items/min)
+2026-06-19 13:32:56 [ifood] INFO: Timeout waiting for 'networkidle', proceeding with current HTML.
+2026-06-19 13:32:56 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=914c6eb5-7434-4d05-b28b-8b3aeef1936c
+2026-06-19 13:32:56 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:32:57 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:32:57 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:33:00 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=364f83ed-346d-4eab-a49b-a4405cb0f6ac
+2026-06-19 13:33:07 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:33:11 [ifood] INFO: Captcha command sent.
+2026-06-19 13:33:18 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=364f83ed-346d-4eab-a49b-a4405cb0f6ac
+2026-06-19 13:33:18 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:33:18 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:33:19 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:33:22 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/brasilia-df/carrefour-hiper---asa-norte-asa-norte/1dcd9511-ab36-416b-b32f-65ca7b793be0?item=b4bcae77-4cbc-4557-87da-c7bac4a43dc4
+2026-06-19 13:33:29 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:33:33 [ifood] INFO: Captcha command sent.
+2026-06-19 13:33:40 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/brasilia-df/carrefour-hiper---asa-norte-asa-norte/1dcd9511-ab36-416b-b32f-65ca7b793be0?item=b4bcae77-4cbc-4557-87da-c7bac4a43dc4
+2026-06-19 13:33:40 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:33:40 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:33:41 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:33:44 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/campinas-sp/pao-de-acucar---campinas-souza-souzas/356eaf9b-8433-413a-a546-48d319ea69f8?item=520fd90f-1707-422d-917e-803d204e4b83
+2026-06-19 13:33:46 [scrapy.extensions.logstats] INFO: Crawled 18 pages (at 3 pages/min), scraped 18 items (at 3 items/min)
+2026-06-19 13:33:51 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:33:56 [ifood] INFO: Captcha command sent.
+2026-06-19 13:34:03 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/?item=520fd90f-1707-422d-917e-803d204e4b83
+2026-06-19 13:34:03 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:34:03 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:34:03 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:34:06 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/droga-raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=b787de24-291a-44e0-90f6-130489416068
+2026-06-19 13:34:14 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:34:18 [ifood] INFO: Captcha command sent.
+2026-06-19 13:34:25 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=b787de24-291a-44e0-90f6-130489416068
+2026-06-19 13:34:25 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:34:25 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:34:25 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:34:29 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/campinas-sp/pao-de-acucar---campinas-souza-souzas/356eaf9b-8433-413a-a546-48d319ea69f8?item=847c3ef2-e8ed-4f02-be6c-8b2cf9d6a19a
+2026-06-19 13:34:36 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:34:37 [ifood] INFO: Captcha command sent.
+2026-06-19 13:34:44 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/campinas-sp/pao-de-acucar---campinas-souza-souzas/356eaf9b-8433-413a-a546-48d319ea69f8?item=847c3ef2-e8ed-4f02-be6c-8b2cf9d6a19a
+2026-06-19 13:34:44 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:34:44 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:34:44 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:34:46 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 3 pages/min), scraped 21 items (at 3 items/min)
+2026-06-19 13:34:48 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/porto-alegre-rs/carrefour-hiper---porto-alegre-partenon/51b9e02a-74a8-4afc-8450-8094ae3318fa?item=8a430c7b-8adf-4472-b5b8-3ce60aa879f3
+2026-06-19 13:34:55 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:34:59 [ifood] INFO: Captcha command sent.
+2026-06-19 13:35:26 [ifood] INFO: Timeout waiting for 'networkidle', proceeding with current HTML.
+2026-06-19 13:35:26 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/porto-alegre-rs/carrefour-hiper---porto-alegre-partenon/51b9e02a-74a8-4afc-8450-8094ae3318fa?item=8a430c7b-8adf-4472-b5b8-3ce60aa879f3
+2026-06-19 13:35:26 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:35:26 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:35:26 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:35:30 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/droga-raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=45891fff-b769-459c-987f-1eac9c52fc8e
+2026-06-19 13:35:37 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:35:38 [ifood] INFO: Captcha command sent.
+2026-06-19 13:35:45 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=45891fff-b769-459c-987f-1eac9c52fc8e
+2026-06-19 13:35:45 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:35:45 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:35:45 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:35:46 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 2 pages/min), scraped 23 items (at 2 items/min)
+2026-06-19 13:35:49 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-jose-dos-campos-sp/pao-de-acucar---colinas-jardim-das-colinas/ade17d26-7f09-4a6f-966b-c6f29df14d9a?item=50a8b3ae-b6e3-4070-b6e1-b3a05b836ede
+2026-06-19 13:35:56 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:36:00 [ifood] INFO: Captcha command sent.
+2026-06-19 13:36:07 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-jose-dos-campos-sp/pao-de-acucar---colinas-jardim-das-colinas/ade17d26-7f09-4a6f-966b-c6f29df14d9a?item=50a8b3ae-b6e3-4070-b6e1-b3a05b836ede
+2026-06-19 13:36:07 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:36:07 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:36:08 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:36:11 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/droga-raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=9107ec60-d4f8-475c-9926-7a58fa63f552
+2026-06-19 13:36:18 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:36:23 [ifood] INFO: Captcha command sent.
+2026-06-19 13:36:30 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/?item=9107ec60-d4f8-475c-9926-7a58fa63f552
+2026-06-19 13:36:30 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:36:30 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:36:30 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:36:34 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=e3ecc3a5-5acd-410c-ad28-5f59e9ab717e
+2026-06-19 13:36:41 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:36:45 [ifood] INFO: Captcha command sent.
+2026-06-19 13:36:46 [scrapy.extensions.logstats] INFO: Crawled 25 pages (at 2 pages/min), scraped 25 items (at 2 items/min)
+2026-06-19 13:36:52 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/drogaria-sao-paulo---clodomiro-amazonas-vila-nova-conceicao/b8a2484a-8e45-4b9f-b32b-a7963d2d6e71?item=e3ecc3a5-5acd-410c-ad28-5f59e9ab717e
+2026-06-19 13:36:52 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:36:52 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:36:53 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:36:56 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=25e806f2-fc18-4610-b504-01f314372615
+2026-06-19 13:37:03 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:37:04 [ifood] INFO: Captcha command sent.
+2026-06-19 13:37:11 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=25e806f2-fc18-4610-b504-01f314372615
+2026-06-19 13:37:11 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:37:11 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:37:11 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:37:15 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/campinas-sp/pao-de-acucar---campinas-souza-souzas/356eaf9b-8433-413a-a546-48d319ea69f8?item=7af31026-c724-4035-bfdc-bc7e04498778
+2026-06-19 13:37:22 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:37:23 [ifood] INFO: Captcha command sent.
+2026-06-19 13:37:30 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/campinas-sp/pao-de-acucar---campinas-souza-souzas/356eaf9b-8433-413a-a546-48d319ea69f8?item=7af31026-c724-4035-bfdc-bc7e04498778
+2026-06-19 13:37:30 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:37:30 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:37:30 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:37:34 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/droga-raia---vila-olimpia---b---403-vl-olimpia/58203d97-5c99-4d2c-b2ff-c2adac85c72a?item=3f49b48f-cfaa-45dd-ad1d-55f1e155e92b
+2026-06-19 13:37:41 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:37:46 [ifood] INFO: Captcha command sent.
+2026-06-19 13:37:46 [scrapy.extensions.logstats] INFO: Crawled 28 pages (at 3 pages/min), scraped 28 items (at 3 items/min)
+2026-06-19 13:37:53 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/?item=3f49b48f-cfaa-45dd-ad1d-55f1e155e92b
+2026-06-19 13:37:53 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:37:53 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:37:53 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:37:56 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=cf566579-edd4-422f-a7f4-acd172a354e1
+2026-06-19 13:38:03 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:38:08 [ifood] INFO: Captcha command sent.
+2026-06-19 13:38:15 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/fortaleza-ce/farmacias-pague-menos---52-aldeota/8387b06c-6ac0-42b9-860c-8debae36d8fd?item=cf566579-edd4-422f-a7f4-acd172a354e1
+2026-06-19 13:38:15 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:38:15 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:38:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2026-06-19 13:38:15 [ifood] INFO: --------------------------------------------------
+2026-06-19 13:38:15 [ifood] INFO: Total de URLs processadas: 30
+2026-06-19 13:38:15 [ifood] INFO: Sucessos: 16
+2026-06-19 13:38:15 [ifood] INFO: Falhas: 14
+2026-06-19 13:38:15 [ifood] INFO: Taxa de sucesso: 53.3%
+2026-06-19 13:38:15 [ifood] INFO: Tempo total de execução: 11 minuto(s)
+2026-06-19 13:38:15 [ifood] INFO: --------------------------------------------------
+2026-06-19 13:38:15 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/spidermon/contrib/scrapy/extensions.py:238: ScrapyDeprecationWarning: Passing a 'spider' argument to StatsCollector.get_stats() is deprecated and the argument will be removed in a future Scrapy version.
+  "stats": self.crawler.stats.get_stats(spider),
+
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] ------------------------------ MONITORS ------------------------------
+
+[Spidermon] Round history saved to: test_history/round_result_20260619_133815.json
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] iFood Performance Validation/test_verificacao_geral_da_rodada... FAIL
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] ----------------------------------------------------------------------
+2026-06-19 13:38:15 [ifood] ERROR: [Spidermon] 
+======================================================================
+FAIL: iFood Performance Validation/test_verificacao_geral_da_rodada
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/rodolfo8murilo/Documentos/Workspace/ifood-extract/crawler/monitors.py", line 34, in test_verificacao_geral_da_rodada
+    self.assertTrue(
+AssertionError: False is not true : Expected 95% success rate. Achieved only 53.3% (16 out of 30). iFood security might have increased!
+
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] 1 monitor in 0.001s
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] FAILED (failures=1)
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] -------------------------- FINISHED ACTIONS --------------------------
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] ----------------------------------------------------------------------
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] 0 actions in 0.000s
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] OK
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] --------------------------- PASSED ACTIONS ---------------------------
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] ----------------------------------------------------------------------
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] 0 actions in 0.000s
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] OK
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] --------------------------- FAILED ACTIONS ---------------------------
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] ----------------------------------------------------------------------
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] 0 actions in 0.000s
+2026-06-19 13:38:15 [ifood] INFO: [Spidermon] OK
+2026-06-19 13:38:15 [ifood] INFO: Terminating SeleniumBase driver gracefully...
+2026-06-19 13:38:15 [ifood] INFO: Executing preventive pkill for any remaining orphaned Chrome processes...
+2026-06-19 13:38:15 [ifood] INFO: Process cleanup completed successfully!
+2026-06-19 13:38:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 13143,
+ 'downloader/request_count': 30,
+ 'downloader/request_method_count/GET': 30,
+ 'downloader/response_bytes': 2946824,
+ 'downloader/response_count': 30,
+ 'downloader/response_status_count/200': 30,
+ 'elapsed_time_seconds': 689.078609,
+ 'extracao/falha': 14,
+ 'extracao/sucesso': 16,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2026, 6, 19, 16, 38, 15, 232626, tzinfo=datetime.timezone.utc),
+ 'item_scraped_count': 30,
+ 'items_per_minute': 2.6124818577648767,
+ 'log_count/INFO': 233,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 198676480,
+ 'memusage/startup': 159862784,
+ 'response_received_count': 30,
+ 'responses_per_minute': 2.6124818577648767,
+ 'scheduler/dequeued': 30,
+ 'scheduler/dequeued/memory': 30,
+ 'scheduler/enqueued': 30,
+ 'scheduler/enqueued/memory': 30,
+ 'start_time': datetime.datetime(2026, 6, 19, 16, 26, 46, 154017, tzinfo=datetime.timezone.utc)}
+2026-06-19 13:38:15 [scrapy.core.engine] INFO: Spider closed (finished)
