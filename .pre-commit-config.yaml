@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/PyCQA/pylint
+    rev: v3.2.6
+    hooks:
+      - id: pylint
+        args: ["--disable=C0114,C0115,C0116"]
+        name: pylint
+        entry: poetry run pylint
+        language: system
+        types: [python]
+        files: ^crawler/
+        
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.4
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format      

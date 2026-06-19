@@ -1,0 +1,11 @@
+{
+    "execution_date": "2026-06-19 12:35:06",
+    "spider_name": "ifood",
+    "metrics": {
+        "total_urls_processed": 2,
+        "successes": 2,
+        "failures_or_captchas": 0,
+        "system_or_code_errors": 0
+    },
+    "round_status": "SUCCESS"
+}
