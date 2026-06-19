@@ -1026,14 +1026,14 @@ ifood-extract/
 
 ## Boas Práticas Implementadas
 
-✅ Não sobrecarregar o site**: respeita `DOWNLOAD_DELAY` e throttling automático
-✅ Tratamento robusto de falhas**: retry automático, logging detalhado, fallbacks
-✅ Código organizado**: separação clara (spider → items → pipelines)
-✅ Configuração externalizada**: sem hardcoding de paths, timeouts, etc.
-✅ Logging estruturado**: cada erro é registrado com contexto
-✅ Reprodutibilidade**: poetry.lock garante dependências exactas
-✅ Monitoramento**: métricas de execução ao fim de cada run
-✅ Escalabilidade**: suporta 1.000 URLs com 95%+ sucesso garantido
+- **✅ Não sobrecarregar o site**: respeita `DOWNLOAD_DELAY` e throttling automático
+- **✅ Tratamento robusto de falhas**: retry automático, logging detalhado, fallbacks
+- **✅ Código organizado**: separação clara (spider → items → pipelines)
+- **✅ Configuração externalizada**: sem hardcoding de paths, timeouts, etc.
+- **✅ Logging estruturado**: cada erro é registrado com contexto
+- **✅ Reprodutibilidade**: poetry.lock garante dependências exactas
+- **✅ Monitoramento**: métricas de execução ao fim de cada run
+- **✅ Escalabilidade**: suporta 1.000 URLs com 95%+ sucesso garantido
 
 ## Problemas Comuns e Soluções
 
