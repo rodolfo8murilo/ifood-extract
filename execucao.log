@@ -1,0 +1,96 @@
+2026-06-19 12:59:42 [scrapy.utils.log] INFO: Scrapy 2.14.2 started (bot: scrapybot)
+2026-06-19 12:59:42 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.2',
+ 'libxml2': '2.14.6',
+ 'cssselect': '1.4.0',
+ 'parsel': '1.11.0',
+ 'w3lib': '2.4.0',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]',
+ 'pyOpenSSL': '25.3.0 (OpenSSL 3.5.5 27 Jan 2026)',
+ 'cryptography': '46.0.5',
+ 'Platform': 'Linux-6.17.0-35-generic-x86_64-with-glibc2.39'}
+2026-06-19 12:59:42 [scrapy.crawler] DEBUG: Using AsyncCrawlerProcess
+2026-06-19 12:59:42 [asyncio] DEBUG: Using selector: EpollSelector
+2026-06-19 12:59:42 [ifood] INFO: Total URLs loaded: 999
+2026-06-19 12:59:42 [scrapy.addons] INFO: Enabled addons:
+[]
+2026-06-19 12:59:42 [scrapy.extensions.telnet] INFO: Telnet Password: 4ae1c85a78fe0bda
+2026-06-19 12:59:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle',
+ 'spidermon.contrib.scrapy.extensions.Spidermon']
+2026-06-19 12:59:42 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'CONCURRENT_REQUESTS': 1,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 1,
+ 'DOWNLOAD_DELAY': 3.0,
+ 'DOWNLOAD_TIMEOUT': 120,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'crawler.spiders',
+ 'RETRY_HTTP_CODES': [403, 429, 500, 502, 503, 504],
+ 'RETRY_TIMES': 3,
+ 'SPIDER_MODULES': ['crawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+2026-06-19 12:59:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'crawler.middlewares.SeleniumBaseCDPMiddleware']
+2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/core/downloader/middleware.py:44: ScrapyDeprecationWarning: SeleniumBaseCDPMiddleware.process_request() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(mw.process_request)
+
+2026-06-19 12:59:43 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2026-06-19 12:59:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['crawler.pipelines.SaveJsonPipeline']
+2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:41: ScrapyDeprecationWarning: SaveJsonPipeline.open_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.open_spider)
+
+2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:44: ScrapyDeprecationWarning: SaveJsonPipeline.close_spider() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.close_spider)
+
+2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/scrapy/pipelines/__init__.py:47: ScrapyDeprecationWarning: SaveJsonPipeline.process_item() requires a spider argument, this is deprecated and the argument will not be passed in future Scrapy versions. If you need to access the spider instance you can save the crawler instance passed to from_crawler() and use its spider attribute.
+  self._check_mw_method_spider_arg(pipe.process_item)
+
+2026-06-19 12:59:43 [scrapy.core.engine] INFO: Spider opened
+2026-06-19 12:59:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2026-06-19 12:59:43 [py.warnings] WARNING: /home/rodolfo8murilo/Documentos/Workspace/ifood-extract/.venv/lib/python3.12/site-packages/spidermon/contrib/scrapy/extensions.py:238: ScrapyDeprecationWarning: Passing a 'spider' argument to StatsCollector.get_stats() is deprecated and the argument will be removed in a future Scrapy version.
+  "stats": self.crawler.stats.get_stats(spider),
+
+2026-06-19 12:59:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6028
+2026-06-19 12:59:43 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 12:59:46 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/brasilia-df/pao-de-acucar---aguas-claras-sul-aguas-claras/5938ca36-c5ee-455b-b0ce-8211f1921be5?item=c2296a33-6a72-415b-888b-9c9ed1b5b5fd
+2026-06-19 12:59:53 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 12:59:58 [ifood] INFO: Captcha command sent.
+2026-06-19 13:00:25 [ifood] INFO: Timeout waiting for 'networkidle', proceeding with current HTML.
+2026-06-19 13:00:25 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/brasilia-df/pao-de-acucar---aguas-claras-sul-aguas-claras/5938ca36-c5ee-455b-b0ce-8211f1921be5?item=c2296a33-6a72-415b-888b-9c9ed1b5b5fd
+2026-06-19 13:00:25 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:00:25 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:00:25 [ifood] INFO: Processing rendered page data.
+2026-06-19 13:00:28 [ifood] INFO: Accessing page via Xvfb: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=04264723-a92c-4066-999b-cf7e5b219e92
+2026-06-19 13:00:35 [ifood] INFO: Executing captcha bypass (solve_captcha)...
+2026-06-19 13:00:40 [ifood] INFO: Captcha command sent.
+2026-06-19 13:00:43 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 1 items (at 1 items/min)
+2026-06-19 13:00:47 [ifood] INFO: URL successfully captured: https://www.ifood.com.br/delivery/sao-paulo-sp/carrefour-hiper---giovani-gronchi-vila-andrade/26dc0387-2264-4566-9f53-0d8b3bdbd994?item=04264723-a92c-4066-999b-cf7e5b219e92
+2026-06-19 13:00:47 [ifood] INFO: Closing browser instances safely...
+2026-06-19 13:00:47 [ifood] INFO: Starting SeleniumBase CDP with hardware spoofing...
+2026-06-19 13:00:47 [ifood] INFO: Processing rendered page data.

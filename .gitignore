@@ -7,6 +7,3 @@ __pycache__/
 
 # VS Code
 .vscode/
-
-# Other Common
-*.log
