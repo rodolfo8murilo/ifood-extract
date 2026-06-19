@@ -186,15 +186,17 @@ Configuração centralizada:
 
 - **Python 3.11+** (testado com 3.12.3)
 - **Poetry** (gerenciador de dependências recomendado)
-- **xvfb** (servidor X virtual para headless)
-- **Linux/macOS** (não testado em Windows)
+- **Linux** (não testado em Windows)
 
 ### Passo a Passo
 
 #### 1. Clonar ou preparar o projeto
+```
+git clone git@github.com:rodolfo8murilo/ifood-extract.git
+```
 
 ```bash
-cd /home/rodolfo8munilo/Documentos/Workspace/ifood-extract
+cd ifood-extract
 ```
 
 #### 2. Instalar Poetry (se não tiver)
@@ -219,13 +221,12 @@ poetry install
 Isso instala:
 - Scrapy 2.14.2
 - SeleniumBase (com CDP)
-- xvfb (no container Docker ou instalado no sistema)
 - Todas as dependências em `pyproject.toml` com versões fixadas em `poetry.lock`
 
-#### 5. Ativar ambiente (opcional)
+#### 5. Ativar ambiente 
 
 ```bash
-poetry shell
+poetry env activate
 ```
 
 Agora você está dentro do ambiente isolado com todos os pacotes prontos.
