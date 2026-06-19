@@ -259,7 +259,7 @@ poetry run scrapy crawl ifood
 ### Modo com xvfb + Logging (Produção - Recomendado)
 
 ```bash
-env -u DISPLAY -u XDG_SESSION_TYPE -u WAYLAND_DISPLAY xvfb-run --server-args='-screen 0 1280x900x24 -ac -nolisten tcp -nocursor' poetry run scrapy crawl ifood 2>&1 | tee execucao.log
+env -u DISPLAY -u XDG_SESSION_TYPE -u WAYLAND_DISPLAY xvfb-run -a --server-args='-screen 0 1280x900x24 -ac -nolisten tcp -nocursor' poetry run scrapy crawl ifood 2>&1 | tee execucao.log
 ```
 
 **Explicação de cada parte**:
